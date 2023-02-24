@@ -24,6 +24,10 @@
           esp-idf-esp32h2
           gcc-xtensa-lx106-elf-bin
           esp8266-rtos-sdk;
+          crosstool-ng-xtensa
+          gcc-xtensa-lx106-elf
+
+          llvm-xtensa;
       };
 
       devShells = {
@@ -38,6 +42,10 @@
       };
 
       checks = (import ./tests/build-idf-examples.nix { inherit pkgs; }) // (import ./tests/build-esp8266-example.nix { inherit pkgs; });
+      # rust-xtensa = (import ./pkgs/xtensa-rust-bin.nix { rust = pkgs.rust; callPackage = pkgs.callPackage; lib = pkgs.lib; stdenv = pkgs.stdenv; fetchurl = pkgs.fetchurl;});
+
     });
+    # xtensa-rust = 
+
 }
 
