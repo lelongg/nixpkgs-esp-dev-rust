@@ -1,4 +1,4 @@
-{ version ? "1.67.0.0"
+{ version ? "1.82.0.3"
 , callPackage
 , rust
 , lib
