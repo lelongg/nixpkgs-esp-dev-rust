@@ -36,7 +36,7 @@ let
       };
       rust-src = fetchurl {
         url = "https://github.com/esp-rs/rust-build/releases/download/v${version}/rust-src-${version}.tar.xz";
-        hash = "sha256-XwYp3YpVriakdqBCLGns3Od+2UlLFmr912Z8lq/xzo8=";
+        hash = "sha256-Vf0Dc9RTm9grIqR/5YKNNoTLQiy5JqI9OJyl+WBaeT0=";
       };
       
     };
