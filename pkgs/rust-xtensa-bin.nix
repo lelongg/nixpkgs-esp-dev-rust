@@ -32,7 +32,7 @@ let
     srcs = {  
       rustc = fetchurl {
         url = "https://github.com/esp-rs/rust-build/releases/download/v${version}/rust-${version}-x86_64-unknown-linux-gnu.tar.xz";
-        hash = "sha256-Tk1GQvzlXcMfIkN+yXtDA2BIkK00iKwLGt6eWNlKGsM=";
+        hash = "sha256-AQYRuKmxVc5lCceu60oWybjl75iE/mzkmMoVq0yaNbE=";
       };
       rust-src = fetchurl {
         url = "https://github.com/esp-rs/rust-build/releases/download/v${version}/rust-src-${version}.tar.xz";
